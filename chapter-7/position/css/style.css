@@ -1,0 +1,101 @@
+.cont1{
+    height: 100px;
+    width: 150px;
+    border: 3px solid darkblue;
+    background-color: orangered;
+}
+.cont2{
+    height: 100px;
+    width: 150px;
+    border: 3px solid seagreen;
+    background-color: skyblue;
+    position: relative;
+    top: 20px;
+    left:40px;
+}
+.cont3{
+    height: 100vh;
+    width: 300px;
+    padding-top: 20px;
+}
+
+a{
+    text-decoration: none;
+    font-size: 30px;
+    color: white;
+}
+.back-to-top{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-color: blue;
+    text-align: center;
+    position: fixed;
+    top: 80vh;
+    right: 100px;
+}
+
+.the-parent-container{
+    position: relative;
+    background-color: lightslategray;
+    width: 700px;
+    height: 600px;
+    border: 3px solid teal;
+    font-size: 20px;
+
+}
+.the-child-container{
+    position: absolute;
+    top: 300px;
+    right: 10px;
+    background-color: skyblue;
+    width: 200px;
+    height: 160px; 
+    border: 3px solid firebrick;
+ 
+}
+.some-element{
+    position: sticky;
+    top: 0;
+    background-color: #cae8ca;
+    border: 2px solid #4CAF50;
+    padding-top: 5px;
+}
+
+.floating-container{
+    background-color: lemonchiffon;
+    margin-bottom: 100px;
+}
+img{
+    height: 200px;
+    width: 200px;
+    /* float: right; */
+    float: left;
+    margin: 10px;
+}
+
+.floating-container1{
+    background-color: lightpink;
+}
+
+.make-it-float{
+    background-color: white;
+    float: left;
+    width: 250px;
+}
+.float-issues{
+    border: 1px solid goldenrod;
+    overflow: auto;
+}
+.float-issues::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+/* with clearfix */
+.f-image{
+    height: 200px;
+    width: 200px;
+    float: left;
+}
