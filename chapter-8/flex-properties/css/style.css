@@ -1,0 +1,58 @@
+.flex-container{
+    background-color: rgb(235, 235, 235);
+    border: 4px solid rgb(70, 153, 205);
+    display:flex;
+
+}
+.flex-item{
+    font-size: 35px;
+    color:whitesmoke;
+    height: 100px;
+    /* Not to grow, to shrink and the width to be auto */
+    /* flex: 0 1 auto; */
+    flex: 1 0 auto;
+}
+.item1{
+    background-color: lightgreen;
+}
+.item2{
+    background-color: salmon;
+}
+.item3{
+    background-color: darkblue;
+    flex-grow: 2;
+    /* or the same can be achieved */
+    /* flex: 2 1 auto; */
+    order: 1;
+}
+.item4{
+    background-color: firebrick;
+}
+.item5{
+    background-color: goldenrod;
+    order: 1;
+}
+ .item6{
+    background-color: silver;
+}
+.item7{
+    background-color: darkorchid;
+}
+/*
+.item8{
+    background-color: orange;
+}
+.item9{
+    background-color: seagreen;
+}
+.item10{
+    background-color: magenta;
+} */
+
+.flex-container1{
+    background-color: black;
+    display: flex;
+}
+.test1{
+    flex: 1 0 300px;
+}
