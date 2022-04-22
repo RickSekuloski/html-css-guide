@@ -1,0 +1,31 @@
+div h2{
+    background-color: yellow;
+}
+div :first-child{
+    color: white;
+}
+div :last-child{
+    background-color: purple;
+    color: white;
+}
+div :nth-child(2){
+    background-color: blue;
+    color: white;
+}
+div :nth-child(3){
+    background-color: green;
+    color: white;
+}
+
+section::before {
+    content: "before";
+    color: red;
+    font-weight: bold;
+    font-size: 23px;
+}
+section::after {
+    content: "after";
+    color: green;
+    font-weight: bold;
+    font-size: 23px;
+}
