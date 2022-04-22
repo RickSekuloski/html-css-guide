@@ -1,0 +1,27 @@
+html{
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+.first-box-container {
+  width: 400px;
+  height: 300px;
+  padding: 20px;
+  border: 8px solid purple;
+  background-color: orangered;
+  color: white;
+  font-size: 24px;
+  box-sizing: border-box;
+}
+
+.second-box-container {
+    width: 400px;
+    height: 300px;
+    /* padding: 20px; */
+    border: 8px solid aqua;
+    background-color: steelblue;
+    color: white;
+    font-size: 24px;
+    box-sizing: border-box;
+}
