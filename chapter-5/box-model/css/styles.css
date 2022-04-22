@@ -1,0 +1,41 @@
+h1{
+    border: 3px solid black;
+}
+h2{
+    border: 3px solid black;
+}
+p{
+    border: 3px solid black;
+}
+p span{
+    border: 3px solid palevioletred;
+}
+p a{
+    border: 3px solid tomato;
+}
+img{
+    border: 3px solid black;
+    width: 250px;
+    height: 250px;
+}
+/* Fixed Size width and height container using pixels */
+/* div{
+    background-color: yellow;
+    height: 500px;
+    width: 500px; 
+} */
+/* Relative Size container using percentages*/
+/*div{
+    background-color: yellow;
+    width: 75%;
+    height: 75%;
+} */
+/* SELECT THE DIV CONTAINER USING CLASS NAME SELECTOR*/
+.custom-size{
+    background-color: yellow;
+    height: 500px;
+    width: 500px;
+    padding: 50px;
+    border: 3px solid green;
+    margin: 10px;
+}

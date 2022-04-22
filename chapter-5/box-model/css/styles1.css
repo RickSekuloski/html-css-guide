@@ -1,0 +1,20 @@
+
+.gallery{
+    width: 860px;
+    height: 600px;
+    background-color: orangered;
+}
+
+.img1{
+    height: 250px;
+    width: 250px;
+    border: 3px solid black;
+    margin: 5px 10px 5px 10px;
+    padding: 2px 4px 2px 4px;
+}
+.second{
+    margin-left: -40px;
+}
+.third{
+    margin-left: -40px;
+}
