@@ -1,0 +1,38 @@
+
+.menu{
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+ .menu a{
+    text-decoration: none;
+    text-transform: uppercase;
+    background-color: black;
+    padding: 10px;
+    color: white;
+    border-bottom: 1px solid snow;
+
+}
+.menu a:hover{
+    background-color: darkblue;
+}
+.back-home{
+    text-decoration: none;
+    text-shadow: 2px 4px 8px saddlebrown;
+    border-radius: 8px;
+    background-color: palevioletred;
+    padding: 10px 20px;
+    color: wheat;
+}
+.back-home:hover{
+    background-color: rgb(184, 80, 115);
+}
+.under-construction{
+    height: 100vh;
+    background-color: darkblue;
+}
+.coming-soon{
+    height: 70vh;
+    width: 100%;
+}
