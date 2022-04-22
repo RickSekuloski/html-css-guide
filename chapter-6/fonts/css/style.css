@@ -1,0 +1,169 @@
+.sans-serif{
+    font-size: 48px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: darkorange;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+.serif{
+    font-size: 48px;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: salmon;
+    padding: 10px;
+}
+.container{
+    background-color: teal;
+    font-size: 18px;
+    color: white;
+}
+.double-fsize{
+    font-size: 2em;
+}
+
+.fw-bold{
+    font-weight: bold;
+}
+.fw-bolder{
+    font-weight: bolder;
+}
+.fw-lighter{
+    font-weight: lighter;
+}
+.fw-normal{
+    font-weight: normal;
+}
+.fw-inherit{
+    font-weight: inherit;
+}
+.fw-unset{
+    font-weight: unset;
+}
+/* .container2{
+    line-height: normal;
+    line-height: 2;
+    line-height: 1em;
+    line-height: 1rem;
+    line-height: 200%;
+    line-height: 30px;
+} */
+.container2{
+    background-color: lightblue;
+    font-size: 18px;
+    line-height: 1.5;
+    /* 
+        line-height - calculation
+        18 * 1.5 = 27
+    */
+}
+.container3{
+    background-color: darksalmon;
+    font-size: 18px;
+    /* 
+        line-height - calculation
+        18 * 1.5 = 27
+    */
+}
+.letters{
+    font-size: 18px;
+    background-color: darksalmon;
+    letter-spacing: 1px;
+}
+.letters1{
+    font-size: 18px;
+    background-color: seagreen;
+    letter-spacing: 2px;
+}
+.letters2{
+    font-size: 18px;
+    background-color: firebrick;
+    letter-spacing: -2px;
+}
+
+/* named color */
+.blueTxt{
+    color: darkblue;
+}
+/* RGB color value */
+.blueTxt{
+    color: rgb(4, 24, 124);
+}
+/* RGB color value */
+.blueTxt{
+    color:#040E7C;
+}
+.t-shadow{
+    font-size: 40px;
+    text-shadow: 2px 2px 4px darksalmon;
+    /* will only show the shadow on the x-axis */
+    /* text-shadow:2px 0px 0px darksalmon; */
+    /* will only show the shadow on the y-axis */
+    /* text-shadow:0px 2px 0px darksalmon; */
+    /* the color of the shadow can be color name, rgb or hex*/
+    /* text-shadow: 4px 4px 8px rgb(234, 151, 123); */
+    /* the color of the shadow using hex*/
+    /* text-shadow: 4px 4px 8px #ea977b; */
+    
+}
+.t-indent1{
+    font-size: 20px;
+    color: white;
+    background-color: darksalmon;
+    text-indent: 2rem;
+}
+.t-indent2{
+    font-size: 20px;
+    color: white;
+    background-color: darkviolet;
+    text-indent: -5px;
+}
+.t-indent3{
+    font-size: 20px;
+    color: white;
+    background-color: seagreen;
+    text-indent: 20%;
+}
+.h-text-align{
+    background-color: silver;
+    width: 700px;
+}
+.t-align1{
+    background-color: slategray;
+    margin-bottom: 10px;
+    text-align: left;
+}
+.t-align2{
+    background-color: slategray;
+    margin-bottom: 10px;
+    text-align: right;
+}
+.t-align3{
+    background-color: slategray;
+    margin-bottom: 10px;
+    text-align: center;
+}
+.t-align4{
+    background-color: slategray;
+    margin-bottom: 10px;
+    text-align: justify;
+}
+.t-underline{
+    text-decoration: underline;
+}
+.t-overline{
+    text-decoration: overline;
+}
+.t-line-through{
+    text-decoration: line-through;
+}
+.t-transform{
+    text-transform: none;
+    text-transform: capitalize;
+    text-transform: lowercase;
+    text-transform: uppercase;
+}
+.t-l-spacing{
+    letter-spacing: 20px;
+}
+.t-w-spacing{
+    word-spacing: 20px;
+}
