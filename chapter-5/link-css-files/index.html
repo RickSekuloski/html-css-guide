@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How To Use CSS Rules</title>
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <link rel="stylesheet" type="text/css" href="./css/style1.css">
+    <style>
+        p{
+            font-size: 20px;
+            font-weight: bold;
+            background-color: black;
+            color: white;
+        }
+        h1{
+            color: teal;
+            font-family: sans-serif;
+        }
+        h2{
+            color: orangered;
+            font-family: serif;
+        }
+        h3{
+            color: seagreen;
+            font-family: cursive;
+        }
+        h4{
+            color: springgreen;
+            font-family: monospace;
+        }
+        h5{
+            color: coral;
+            font-family: fantasy;
+        }
+        #first{
+            font-family: serif;
+            color: coral;
+        }
+        .green-text{
+            color: green;
+        }
+        .yellow-text{
+            color: yellow;
+        }
+        a{
+            color:green;
+        }
+        a:visited{
+            color:black;
+        }
+        a:active{
+            color:tomato;
+        }
+        a:hover{
+            color:yellow;
+        }
+    </style>
+</head>
+<body>
+    <h1>Heading One, font-family sans-serif</h1>
+    <h2>Heading Two, font-family serif </h2>
+    <h3>Heading Three, font-family: cursive</h3>
+    <h4>Heading Four, font-family: monospace</h4>
+    <h5>Heading Five, font-family: fantasy</h5>
+    <h1 id="first">Heading One again</h1>
+    <p style="color:red;">Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+        Ducimus molestias, reprehenderit expedita quod eum suscipit voluptates eos illo porro? 
+        Sit aperiam nulla vel porro, quasi debitis similique eum. Asperiores, magni!</p>
+    <p class="green-text">Class type selector!</p>
+    <p class="green-text yellow-text">Class type selector with two class names!</p>
+    <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-classes"> Learn More About Pseudo-classes</a>
+    <p>Inheritance is very important concept not just in <i>Web Development Languages</i>!</p>
+   
+</body>
+</html>
