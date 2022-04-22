@@ -1,0 +1,105 @@
+
+.border1,.border2,.border3,.border4, .border5,.border6,.border7, .border8, .border9, .border10,.border11, .border12, .border13, .border14{
+    background-color: beige;
+    border-style: none;
+    height: 150px;
+    width: 200px;
+    text-align: center;
+    font-size: 22px;
+    margin: 20px 0px 20px 0px;
+    margin-right: 10px;
+}
+
+
+.border2{
+    background-color: salmon;
+    border-style: solid;
+    
+}
+.border3{
+    background-color: yellowgreen;
+    border-style: dotted;
+}
+.border4{
+    background-color: skyblue;
+    border-style: double;
+}
+.border5{
+    background-color: silver;
+    border-style: dashed;
+}
+.border6{
+    background-color: sienna;
+    border-style: ridge;
+}
+.border7{
+    background-color: antiquewhite;
+    border-style: inset;
+}
+.border8{
+    background-color: salmon;
+    border-style: outset;
+}
+.border9{
+    background-color: goldenrod;
+    border-style: groove;
+}
+.border10{
+    width: 400px;
+    background-color: red;
+    color: white;
+    border-style: solid double dotted dashed;
+    /*
+    border-top-style: solid;
+    border-right-style: double;
+    border-bottom-style: dotted;
+    border-left-style: dashed;
+    */
+}
+.border11{
+    width: 400px;
+    background-color: magenta;
+    border-style: solid;
+    border-color: black;
+    color: white;
+    border-top-width: medium;
+    border-right-width: thin;
+    border-bottom-width: thick;
+    border-left-width: medium;
+    /* equivalent  as above, just very short
+    border-width: medium thin thick medium;
+    */
+    
+}
+.border12{
+    border-style: solid;
+    border-width: 10px;
+    border-top-color: green;
+    border-right-color: tomato;
+    border-bottom-color: yellowgreen;
+    border-left-color: brown;
+    /* border-color: green tomato yellowgreen brown; */
+}
+
+.border13{
+    width: 400px;
+    height: 400px;
+    background-color: orangered;
+    border-radius: 10px;
+    /* border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px; */
+}
+.border14{
+    width: 200px;
+    height: 200px;
+    background-color: darkorange;
+
+    border-top-left-radius: 10px;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 30px;
+    /* border-radius: 50px; */
+    border-radius: 50%;
+}
