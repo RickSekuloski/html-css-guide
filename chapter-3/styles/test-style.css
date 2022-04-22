@@ -1,0 +1,36 @@
+
+body{
+    font-family: 'Akaya Telivigala', cursive;
+    font-size: 20px;
+    width: 80%;
+    background-color: rgb(241, 241, 241);
+}
+img{
+    height: 200px;
+    width: 300px;
+    margin-left: 20px;
+    border-radius: 10px;
+}
+h1{
+    color: darkcyan;
+    margin: 10px 20px;
+    padding-top: 10px;
+}
+p img{
+    height: 100px;
+    width: 100px;
+    margin-top: 20px;
+}
+a{
+    background-color: darkred;
+    font-size: 19px;
+    border-radius: 30px;
+    text-decoration: none;
+    padding:5px 5px;
+    color: white;
+    
+}
+span{
+    padding-top: 40px;
+    color: darkblue;
+}
