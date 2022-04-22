@@ -1,1 +1,2 @@
 
+JavaScript files are stored in the scripts folder
