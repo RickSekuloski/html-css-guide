@@ -1,0 +1,22 @@
+
+.content1,.content2,.content3,.content4,.content5{
+    background-color: beige;
+    height: 200px;
+    width: 150px;
+    margin-bottom: 300px;
+}
+.content1{
+    overflow: visible;
+}
+.content2{
+    overflow: hidden;
+}
+.content3{
+    overflow: scroll;
+}
+.content4{
+    overflow: auto;
+}
+.content5{
+    overflow:auto;
+}
