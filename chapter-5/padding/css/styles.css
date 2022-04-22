@@ -1,0 +1,12 @@
+
+.content1{
+    background-color: beige;
+    font-size: 20px;
+    font-family:Arial, Helvetica, sans-serif;
+    padding-top: 20px;
+    padding-right: 40px;
+    padding-bottom: 20px;
+    padding-left: 40px;
+    /* shorthand padding property */
+    /* padding:20px 40px 20px 40px; */
+}
