@@ -1,0 +1,41 @@
+.box-container{
+    background-color: teal;
+    width: 400px;
+    height: 400px;
+    margin-left: 200px;
+    clip-path: circle(100px at 100px 100px);
+    clip-path: circle(100px at 50% 50%);
+    /* The default position is at center */
+    /* clip-path: circle(100px at 0 0); */
+}
+.box-container1{
+    background-color: orangered;
+    height: 200px;
+    width: 400px;
+    margin-left: 200px;
+    clip-path: inset(10px);
+    /* round corner keyword */
+    /* clip-path: inset(20px 10px round 10px  0 0 0); */
+}
+.box-container2{
+    background-color: darkorchid;
+    height: 200px;
+    width: 400px;
+    margin-left: 200px;
+    clip-path: ellipse(100px 80px at center);
+    clip-path: polygon(
+    30% 0%, 
+    70% 0%,
+    100% 30%,
+    100% 70%, 
+    70% 100%, 
+    30% 100%, 
+    0% 70%, 0% 
+    30%);
+}
+.box-container3 {
+    height: 200px;
+    width: 300px;
+    background-color: salmon;
+    clip-path: url("#triangle");
+  }
