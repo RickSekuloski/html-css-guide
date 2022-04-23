@@ -1,0 +1,169 @@
+/*  ========= MAKES THE FORM ELEMENTS SIZING TO BE CONSISTENT THROUGH THE DOCUMENT========= */
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+* {
+    margin: 0;
+}
+/* ========= BASIC FONT STYLING AND SETTING DISPLAY TO BE FLEX ========= */
+body {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 100;
+  font-size: 18px;
+  line-height: 30px;
+  color: #000;
+  background-image: linear-gradient(to left,  #2a2a72, #0d83c8);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+/* ========= ADDING BOX SHADOW TO THE ENTIRE FORM CONTAIENR ========= */
+.reg-container{
+    margin-top: 50px;
+    display: flex;
+    width: 50%;
+    box-shadow: 5px 15px 15px 5px black;
+}
+/* ========= THE FORM WILL OCUPY THE 100% OF THE CONTAINER SIZE ========= */
+.form{
+    width: 100%;
+    height:100%;
+    display: flex;
+    flex-direction: column;
+}
+/* ========= SAME STYLES CAN BE APPLIED TO MULTIPLE ELEMENTS ============ */
+input, textarea, select{
+    border: none;
+    font-family: inherit;
+    font-size: 16px;
+    border-radius: 20px;
+    color: green;
+    padding: 10px 20px;
+}
+fieldset{
+    /* THE LABEL AND THE INPUT SIZES ARE 20 AND 80% RESPECTIVELY
+      WHEN NO ROOM FLEX-WRAP WILL PUSH THE INPUT BELLOW IN NEW
+      LINE */
+    border: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+/* ========= ADDING CSS STYLES FOR THE FORM HEADING ============ */
+.heading-2{
+    text-align: center;
+    padding: 20px 20px;
+    text-transform: uppercase;
+}
+/* =========  THE IMAGE WILL BE 50% OF THE FORM WIDTH ============ */
+.image-section{
+    width: 50%;
+    cursor: pointer;
+}
+/* =========  THE IMAGE CONTAINER CONTAINS THE IMAGE AND CAPTIONS ============ */
+.image-container{
+    height: 100%;
+    /*POSITION RELATIVE BECAUSE WE WANT TO CREATE CSS ANIMATION EFFECT ON HOVER */
+    position: relative;
+    overflow: hidden;
+}
+/* =========  MAKE THE IMAGE HEIGHT AND WIDTH TO FIT THE AVAILABLE SPACE ============ */
+.image{
+    width: 100%;
+    height: 100%;
+}
+/* =========  THE CAPTION WILL BE MOVED 100% FROM THE TOP AND HIDDEN FROM THE USER ============ */
+.caption{
+     /*BLACK BACKROUND WITH OPACITY */
+    background: rgba(0,0,0,0.7);
+    color: #ffff;
+    letter-spacing: 1px;
+    padding: 10px 20px;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    bottom: 0;
+    right: 0;
+    opacity: 0; 
+} 
+/* STYLING THE HEADING */
+.caption-heading1{
+    font-size: 40px;
+    letter-spacing: 2px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 30%;
+    padding-bottom: 30px;
+}
+/* =========  THE IMAGE CONTAINER WILL BECOME VISIBLE ONLY ON HOVER ============ */
+.image-container:hover .caption{
+    top: 0%;
+    opacity: 1;
+    transition: all 2s ease;
+}
+/* =========  MAKING THE LABEL 20% IN WIDTH, NO GROWING JUST SHRINKING ============ */
+.label{
+    color: #fff;
+    padding-right: 10px;
+    font-size: 20px;
+    flex: 0 1 20%;
+
+}
+/* =========  MAKING THE INPUT 80% IN WIDTH, TO GROW AND SHRINK BASED ON AVAILABLE SPACE ============ */
+.textinput{
+    flex:1 1 80%;
+    border: none;
+    height: 50px;
+}
+/* STYLING THE TEXTAREA */
+.textarea{
+    height: 200px;
+    width: 100%;
+    flex: 1 1 80%;
+    margin-bottom: 10px;
+}
+/* STYLING THE SELECT DROPDOWN MENU */
+.select-styles{
+    text-align: center;
+    flex: 1 1 80%;
+    color: #000;
+}
+/* =========  MAKE THE RADIO BUTTONS TO STAND OUT FROM REST AND TO BE STACKED ON EACH OTHER ============ */
+.radio-container{
+    margin-top: 20px;
+    box-shadow: -7px 15px 15px 5px black;
+    background-color: seashell;
+    display: flex;
+    flex-direction: column;
+}
+.label-radio{
+    color: #000;
+    margin: 10px;
+}
+.legend{
+    font-size: 30px;
+    padding-bottom: 15px;
+}
+/* =========  SUBMIT BUTTON, LINEAR GRADIENT AND BASIC ANIMATION ============ */
+.submit-btn{
+    margin: 10px;
+    height: 60px;
+    font-size: 22px;
+    text-transform: uppercase;
+    color: #fff;
+    background-image: linear-gradient(to right,  #8b4f26, #640dc8);
+    transition: all 1s;
+    cursor: pointer;
+}
+/* =========  WHEN WE HOVER THE BUTTON WILL SLIGHTLY INCREASE IN SIZE ============ */
+.submit-btn:hover{
+    transform: scale(1.02);
+    box-shadow: 5px 15px 15px 5px black;
+}
+/* =========  MEDIA QUERY ============ */
+@media screen and (max-width: 800px) {
+    /* MAKE THE ENTIRE IMAGE SECTION DISAPEAR ONCE THE SCREEN WIDTH IS 800PX */
+    figure{
+        display: none;
+    }
+  }
