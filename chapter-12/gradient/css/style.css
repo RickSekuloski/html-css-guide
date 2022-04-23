@@ -1,0 +1,40 @@
+.box-container{
+    background-color: blue;
+    width: 750px;
+}
+.box-container > *{
+    margin: 0 auto;
+} 
+.box{
+    font-size: 30px;
+    height: 300px;
+    width: 300px;
+}
+.box1{
+    background-color: crimson;
+    /* background-image: linear-gradient(crimson, rgb(235, 158, 13)); */
+    background-image: linear-gradient(crimson, #FFA500);
+    /* Gradient left to right */
+    background-image: linear-gradient(to right,crimson, #FFA500);
+    /* to the bottom left corner */
+    background-image: linear-gradient(to bottom left,crimson, #FFA500);
+    /* angle to be 45 degrees */
+    background-image: 
+    linear-gradient(
+        45deg,
+        crimson, 
+        rgb(201, 58, 87),
+        #FFA500,
+        #d88d00 30%);
+
+}
+.box2{
+    background-color: yellow;
+}
+.box3{
+    background-color: green;  
+    background-image: 
+    radial-gradient(
+        green, 
+       lime);
+}
