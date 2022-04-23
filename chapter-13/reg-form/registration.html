@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>HTML Forms</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,700;0,900;1,400;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="reg-container">
+        <figure class="image-section">
+            <div class="image-container">
+                <img src="./img/vitaliy-unsplash.jpg" alt="thanks to vitaliy-unsplash" class="image">
+                <figcaption class="caption">
+                  <div class="caption-heading1">University Porttal</div>
+                  <p>The only skills I have the patience to learn are those that have no real application in life. </p>
+                </figcaption>  
+            </div>
+        </figure>
+
+        <form action="./registration.php" method="POST" class="form">
+            <h2 class="heading-2">University Registration Form</h2>
+            <fieldset class="group-container">
+                <label class="label" for="form-name">Name:</label>
+                <input type="text" name="username" id="form-name" class="textinput" 
+                placeholder="Your Name">
+            </fieldset>
+            <fieldset class="group-container">
+                <label class="label" for="form-email">Email:</label>
+                <input type="email" name="emailaddress" id="form-email" class="textinput" 
+                placeholder="Your Email">
+            </fieldset>
+            <fieldset class="group-container">
+                <label class="label" for="form-tel">Telephone:</label>
+                <input type="tel" name="telephone" id="form-tel" class="textinput" 
+                placeholder="Tel: 123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                required>
+            </fieldset>
+            <fieldset class="group-container">
+                <label class="label" for="message">Tell us about yourself:</label>
+                <textarea name="story" maxlength="600" id="message" class="textarea" 
+                placeholder="In short who are you?">
+                </textarea>
+            </fieldset>
+            <fieldset class="group-container">
+                <label for="campus" class="label" >Select Your Campus:</label>
+                <select name="size" id="sizes" class="select-styles">
+                    <option>Campus 1</option>
+                    <option selected>Campus 2</option>
+                    <option>Campus 3</option>
+                    <option>Campus 4</option>
+                </select>
+            </fieldset>
+            <fieldset class="group-container radio-container">
+                <legend class="legend">Color</legend>
+                <label class="label label-radio" for="blue"> Blue </label>
+                <input type="radio" name="color" value="blue" id="blue" class="inputradio">
+                <label class="label label-radio" for="red"> Red </label>
+                <input type="radio" name="color" value="red" id="red" class="inputradio">
+                <label class="label label-radio" for="white"> White </label>
+                <input type="radio" name="color" value="white" id="white" class="inputradio">
+                <label class="label label-radio" for="green"> Green </label>
+                <input type="radio" name="color" value="green" id="green" class="inputradio">   
+            </fieldset>
+            <input type="submit" value="Submit" class="submit-btn">
+        </form>
+    </div>
+        
+</body>
+</html>
