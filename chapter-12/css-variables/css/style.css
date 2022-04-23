@@ -1,0 +1,33 @@
+body{
+    background-color: wheat;
+}
+:root{
+    --heading1-color:#6a6ad8;
+    --heading2-color:#d8796a;
+    --body-font-size: 16px;  
+}
+.heading1{
+    color: var(--heading1-color);
+}
+.heading2{
+    color: var(--heading2-color);
+}
+.para{
+    --para-color:#178a86;
+    --para-padding:10px 20px;
+    --para-font-size:30px;
+}
+.em-style{
+    color: var(--para-color);
+}
+.span-style{
+    padding:var(--para-padding);
+    font-size:var(--para-font-size);
+    /* fallback and invalid values */
+    /* font-size:var(--para-font-sizes, 30px); */
+}
+@media all and (max-width: 600px) {  
+    :root {  
+      --body-font-size: 12px;  
+    }  
+  }
