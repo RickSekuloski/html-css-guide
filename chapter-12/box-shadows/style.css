@@ -1,0 +1,6 @@
+.box-container{
+    background-color: seashell;
+    height: 400px;
+    width: 400px;
+    box-shadow: 10px 20px 7px 7px rgb(12, 12, 228, .8);
+}
