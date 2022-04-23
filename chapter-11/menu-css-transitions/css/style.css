@@ -1,0 +1,69 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    display: grid;
+    grid-template-rows: 100px 1fr 100px;  
+    grid-template-columns: 1fr 20% 15%;
+    grid-row-gap: 10px;
+    grid-column-gap: 10px;
+    grid-template-areas: 
+      "header header header"
+      "main nav ads"
+      "footer footer footer";
+    height: 100vh;
+    margin: 0;
+    }  
+  header,footer, section, nav, div {
+    padding: 1.2em;
+    background: salmon;
+    }
+  #header {
+    grid-area: header;
+    }
+  #footer {
+    grid-area: footer;
+    }
+  #main { 
+    grid-area: main;      
+    }
+  #nav { 
+    grid-area: nav; 
+    }
+  #ads { 
+    grid-area: ads; 
+    }
+
+  /* menu links */
+  .nav{
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+  }
+  .nav-links{
+    margin: 10px;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 24px;
+    color: white;
+    background-color: rgb(150, 150, 150);
+    transition-property: background-color; 
+    transition-duration: 1s;
+  }
+  .nav-links:hover{
+    background-color: rgb(99, 99, 99);
+  }
+  .nav-links:focus{
+    background-color: rgb(99, 99, 99);
+  }
+
+  /* Stack the layout on small devices/viewports. */
+  @media all and (max-width: 800px) {
+   body{
+    grid-template-rows: 100px 200px 1fr 250px 100px;  
+    grid-template-areas: 
+    "header header header"
+    "nav nav nav"
+    "main main main"
+    "ads ads ads"
+    "footer footer footer";
+   }
+  }
