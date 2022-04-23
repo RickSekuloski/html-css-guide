@@ -1,0 +1,43 @@
+.hidden{
+    display: none;
+}
+@media screen and (orientation: landscape) { 
+    body {
+        background: rgb(186, 104, 222);
+    }
+    .hidden1{
+        display: block;
+    }
+}
+@media screen and (orientation: portrait) { 
+    body {
+        background: rgb(230, 89, 50); 
+        background-color: ora;
+    }
+    .hidden2{
+        display: block;
+    }
+}
+@media screen and (min-width: 800px) {
+    h1 {
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        color: seagreen;
+        letter-spacing: 5px;
+        text-decoration: underline;
+    }
+}
+@media screen and (max-width: 600px) {
+    h1 {
+        font-family: 'Courier New', Courier, monospace;
+        color: white;
+        letter-spacing: 10px;
+    }
+}
+@media screen and (min-width: 800px) {
+    h1 {
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        color: seagreen;
+        letter-spacing: 5px;
+        text-decoration: underline;
+    }
+}
