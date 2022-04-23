@@ -1,0 +1,14 @@
+body{
+    background-color: seagreen;
+}
+h1{
+    color: violet;
+}
+.img-container{
+    font-size: 28px;
+    color: white;
+}
+img{
+    width: 800px;
+    height: 800px;
+}

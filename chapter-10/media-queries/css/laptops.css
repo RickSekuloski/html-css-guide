@@ -1,0 +1,14 @@
+body{
+    background-color: salmon;
+}
+h1{
+    color: black;
+}
+.img-container{
+    font-size: 18px;
+    color: white;
+}
+img{
+    width: 450px;
+    height: 450px;
+}

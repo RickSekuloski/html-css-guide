@@ -1,0 +1,14 @@
+body{
+    background-color: crimson;
+}
+h1{
+    color: seagreen;
+}
+.img-container{
+    font-size: 14px;
+    color: white;
+}
+img{
+    width: 200px;
+    height: 200px;
+}
