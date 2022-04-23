@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <h1>HTML Forms</h1>
+    <form action="/somepage.php" method="GET" class="mailing-list" enctype="multipart/form-data">
+        <div class="form-fields">
+            <label for="firstName">Your Name:</label>
+            <input type="text" name="firstName" id="firstName" value="Andy" minlength="3" maxlength="10" size="10">
+        </div>
+        <div class="form-fields">
+            <label for="lastName">Your Last Name:</label>
+            <input type="text" name="lastName" id="lastName">
+        </div>
+        <div class="form-fields">
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email">
+        </div>
+        <div class="form-fields">
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" cols="50"
+                placeholder="In the placeholder we write short description
+                what we expect the user to do write in the text area">
+              </textarea>
+        </div>
+        <div class="form-fields">
+            <label for="dis">Disabled:</label>
+            <input type="text" name="dis" id="dis" 
+                   placeholder="This is disabled element! " disabled>
+        </div>
+        <div class="form-fields">
+            <label for="message1">Message:</label>
+            <textarea id="message1" name="message1" rows="4" cols="50" readonly>
+                 Readonly attribute
+              </textarea>
+        </div>
+        <div class="form-fields">
+            <label for="password">Password:</label>
+            <input type="password" name="password" id="password">
+        </div>
+        <div class="form-fields">
+            <label for="phone">Enter your phone number in this format: 123-456-7890</label>
+            <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+        </div>
+        <div class="form-fields">
+            <label for="country_code">Country code:</label>
+            <input type="text" id="country_code" name="country_code"
+            pattern="[A-Za-z]{3}">
+        </div>
+        <div class="form-fields">
+            <label for="page">Add your website:</label>
+            <input type="url" id="page" name="page"  pattern="https://.*" size="30">
+        </div>
+        <div class="form-fields">
+            <p>Destination: <input type="text" list="travelto" name="traveling">
+            <datalist id="travelto">
+                <option value="Melbourne City">
+                <option value="Sydney City">
+                <option value="Perth City">     
+                <option value="Brisbane City">
+                <option value="Adelaide City">
+                <option value="Gold Coast City"> 
+                <option value="Darwin City">
+                <option value="Hobart City">            
+            </datalist>
+        </div>
+        <div class="form-fields">
+              <p>What is your next Web Development language:</p>
+              <input type="radio" id="python" name="next_language" value="Python">
+              <label for="python">Python</label><br>
+              <input type="radio" id="javascript" name="next_language" value="JavaScript">
+              <label for="javascript">JavaScript</label><br>
+              <input type="radio" id="java" name="next_language" value="Java">
+              <label for="java">Java</label><br>
+              <input type="radio" id="php" name="next_language" value="PHP">
+              <label for="php">PHP</label><br>
+              <input type="radio" id="go" name="next_language" value="Go">
+              <label for="go">Go</label><br>
+              <input type="radio" id="ruby" name="next_language" value="Ruby">
+              <label for="ruby">Ruby</label>
+        </div>
+        <div class="form-fields">
+            <p>What are your future Web Development languages:</p>
+            <input type="checkbox" id="python" name="next_language" value="Python">
+            <label for="python">Python</label><br>
+            <input type="checkbox" id="javascript" name="next_language" value="JavaScript" checked>
+            <label for="javascript">JavaScript</label><br>
+            <input type="checkbox" id="java" name="next_language" value="Java">
+            <label for="java">Java</label><br>
+            <input type="checkbox" id="php" name="next_language" value="PHP">
+            <label for="php">PHP</label><br>
+            <input type="checkbox" id="go" name="next_language" value="Go">
+            <label for="go">Go</label><br>
+            <input type="checkbox" id="ruby" name="next_language" value="Ruby">
+            <label for="ruby">Ruby</label>
+      </div>
+      <div class="form-fields">
+            <p>Do you agree with our website terms:</p>
+           <input type="checkbox" id="yes" name="page_terms" value="Yes">
+           <label for="yes">Yes</label><br>
+     </div>
+     <div class="form-fields">
+        <label for="colors">What is your fav color?</label>
+        <select name="colors" id="colors">
+          <option value="red">Red</option>
+          <option value="orange">Orange</option>
+          <option value="blue">Blue</option>
+          <option value="yellow">Yellow</option>
+          <option value="green">Green</option>
+          <option value="purple">Purple</option>
+          <option value="violet">Violet</option>
+     
+        </select>
+     </div>
+     <br>
+     <br>
+     <div class="form-fields">
+        <label for="colors1">What is your fav color?</label>
+        <select name="colors1" id="colors1" size="6">
+            <optgroup label="group1">
+                <option value="red">Red</option>
+                <option value="orange">Orange</option>
+                <option value="blue" selected>Blue</option>
+            </optgroup>
+            <optgroup label="group2">
+                <option value="yellow" selected>Yellow</option>
+                <option value="green">Green</option>
+                <option value="purple">Purple</option>
+                <option value="violet">Violet</option>
+              </optgroup>
+        </select>
+     </div>
+     <div class="form-fields">
+         <label for="file">Attach your Resume (CV):</label>
+         <input type="file" name="resume"  accept="image/png, image/jpeg" mu id="file" multiple required>
+     </div>
+     
+     <div class="form-fields">
+         <label for="inputdate">Date</label>
+         <input type="date" name="date" value="2022-05-05" >
+     </div>
+
+     <div class="form-fields">
+        <label for="inputtime">Time</label>
+        <input type="time" name="time" value="02:30:00" >
+    </div>
+    <div class="form-fields">
+       <label for="datetime">Date/time:</label>
+       <input type="datetime-local" name="datetime" value="2022-05-22T02:30:00" >
+   </div>
+   <div class="form-fields">
+      <label for="month">Month:</label>
+      <input type="month" name="month" value="2022-05" >
+  </div>
+  <div class="form-fields">
+     <label for="week">Week:</label>
+     <input type="week" name="week" value="2022-W16" >
+ </div>
+        <div class="form-submit">
+            <input type="submit" value="Submit">
+        </div> 
+        <br>
+        <br>
+        <div class="form-submit">
+            <input type="reset" value="Reset!">
+        </div> 
+
+    </form>
+</body>
+</html>
