@@ -1,0 +1,7 @@
+.img-container{
+
+    border: 1px solid black;
+}
+img{
+    max-width: 100%;
+}
