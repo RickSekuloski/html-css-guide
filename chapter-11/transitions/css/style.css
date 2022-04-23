@@ -1,0 +1,70 @@
+body{
+  font-family: 'Times New Roman', Times, serif;
+}
+.btn{
+  font-size: 22px;
+  color: black;
+  height: 80xp;
+  width:300px;
+  padding: 10px 20px;
+  border-radius: 10px;
+  background-color: rgb(200, 237, 234);
+  margin: 10px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-transform: capitalize;
+  transition-property: width; 
+  transition-duration: 2.5s; 
+  /* transition-delay: .5s; */
+  /* transition: width 2.5s ease-in .5s; */
+}
+.btn:hover{
+  width: 500px;
+}
+span{
+  color: blue;
+  font-weight: bold;
+  padding-top: 3px;
+}
+.linear{
+  transition-timing-function: linear;
+}
+.ease{
+  transition-timing-function: ease;
+}
+.ease-in{
+  transition-timing-function: ease-in;
+}
+.ease-out{
+  transition-timing-function: ease-out;
+}
+.ease-in-out{
+  transition-timing-function: ease-in-out;
+}
+.steps{
+  transition-timing-function: steps(3, end);
+}
+
+.mutliple{
+  background-color: rgb(69, 84, 246);
+  height: 50px;
+  width: 100px;
+  border-radius: 50px;
+  padding: 10px 20px;
+  font-size: 22px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition-property: width, background-color, color;
+  transition-duration: .5s, 1s, .5s;
+  transition-timing-function: ease-in, ease-out, ease-in;
+
+}
+.mutliple:hover{
+  width: 120px;
+  background-color: rgb(211, 18, 121);
+  color:white;
+}
