@@ -1,0 +1,90 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-size:20px;
+}
+.grid{
+    display: grid;
+    grid-template-columns: 266px 266px 266px;
+    grid-template-columns: 150px 150px 150px;
+    grid-template-rows: auto;  
+    width: 800px;
+    height: 600px;
+    width: 1000px;
+    height: 800px;
+    background: orangered;
+    /* justify-items */
+     
+     /*justify-items: start;
+    justify-items: center;
+    justify-items: end;
+   */
+     /* align-items */
+   /* align-items: start;
+   align-items: center;
+   align-items: end; */
+
+   /*justify-content */
+   /* justify-content: start;
+   justify-content: end;
+   justify-content: center;
+   justify-content: space-around;
+   justify-content: space-between;
+   justify-content: space-evenly; */
+   /*align-content */
+   align-content: start;
+   align-content: end;
+   align-content: center;
+   align-content: space-around;
+   align-content: space-between;
+   align-content: space-evenly;
+}
+.items{
+    height: 70px;
+    background: rgba(255, 213, 70, 0.4);
+    border: 2px dashed rgba(236, 198, 48, 0.5);
+}
+.item-1{
+    background-color: magenta;
+}
+.item-2{
+    background-color: blue;
+}
+.item-3{
+    background-color: greenyellow;
+}
+.item-4{
+    background-color: cadetblue;
+}
+.item-5{
+    background-color: slategrey;
+}
+.item-6{
+    background-color: crimson;
+}
+.item-7{
+    background-color: cyan;
+}
+.item-8{
+    background-color: coral;
+}
+.item-9{
+    background-color: goldenrod;
+}
+.item-10{
+    background-color: lightpink;
+}
+.item-11{
+    background-color: aquamarine;
+}
+.item-12{
+    background-color: teal;
+}
+.item-13{
+    background-color: sienna;
+}
+.item-14{
+    background-color: indigo;
+}
+
+
