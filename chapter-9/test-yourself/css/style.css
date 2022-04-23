@@ -1,0 +1,59 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-size:20px;
+}
+.grid{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    border: 2px solid green;
+}
+.items{
+    width: 200px;
+    /* height: 300px; */
+}
+.item-1{
+    background-color: magenta;
+}
+.item-2{
+    background-color: blue;
+}
+.item-3{
+    background-color: greenyellow;
+}
+.item-4{
+    background-color: cadetblue;
+}
+.item-5{
+    background-color: slategrey;
+}
+.item-6{
+    background-color: red;
+}
+.item-7{
+    background-color: cyan;
+}
+.item-8{
+    background-color: coral;
+}
+.item-9{
+    background-color: goldenrod;
+}
+.item-10{
+    background-color: lightpink;
+}
+.item-11{
+    background-color: aquamarine;
+}
+.item-12{
+    background-color: teal;
+}
+.item-13{
+    background-color: sienna;
+}
+.item-14{
+    background-color: indigo;
+}
+
+
