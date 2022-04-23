@@ -1,0 +1,103 @@
+body { 
+    display: grid;
+    grid-template-areas: 
+      "header header header"
+      "article nav ads"
+      "footer nav ads";
+    grid-template-rows: 400px 1fr 70px;  
+    grid-template-columns: 1fr 20% 15%;
+    height: 100vh;
+    margin: 0;
+    color: wheat;
+    font-family: 'Roboto', sans-serif;
+    }  
+  header, footer, article, nav, div {
+    font-size: 1.5em;
+    padding: 1.2em;
+    padding: 60px;
+    }
+
+  .header {
+    display: flex;
+    justify-content: center;
+    background: rgb(107, 100, 237);
+    grid-area: header;
+    clip-path: polygon(100% 0, 100% 71%, 64% 81%, 0 100%, 0 0);
+
+    }
+  .footer {
+    background: rgb(22, 19, 77);
+    grid-area: footer;
+    margin-top: -120px;
+    }
+  .main { 
+    background: rgb(115, 113, 152);
+    grid-area: article;
+    margin-top: -81px;
+    padding: 100px;
+    }
+  .nav { 
+    background: rgb(63, 60, 125);
+    grid-area: nav; 
+    margin-top: -110px;
+
+    }
+  .ads { 
+    background: rgb(33, 28, 135);
+    grid-area: ads; 
+    margin-top: -140px;
+    } 
+
+  form{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+  }
+  .search{
+    height: 40px;
+    width: 60%;
+    display: flex;
+  }
+  .search-field{
+    border: none;
+    height: 40px;
+    flex: 1 1 500px;
+    border-radius: 20px; 
+    padding-left: 20px;
+    color: lightseagreen;
+    font-family: inherit;
+  }
+  .search-field:focus{
+    outline: none;
+  }
+  .search-btn{
+    font-family: inherit;
+    border: none;
+    flex: 0 1 150px;
+
+    color: #fff;
+    background-color: #6b0f1a;
+    background-image: linear-gradient(315deg, #6b0f1a 0%, #b91372 74%);
+    border-radius: 20px;
+    transition: all .5s;
+    cursor: pointer;
+    margin-left: -40px;
+  }
+  .search-btn:hover{
+    box-shadow: 4px 8px 10px 3px rgba(0, 0, 0, 0.4);
+  }
+    /* Stack the layout on small devices/viewports. */
+    @media all and (max-width: 575px) {
+      body { 
+        grid-template-areas: 
+          "header"
+          "article"
+          "ads"
+          "nav"
+          "footer";
+        grid-template-rows: 300px 1fr 70px 1fr 70px;  
+        grid-template-columns: 1fr;
+     }
+
+
+    }
