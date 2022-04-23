@@ -1,0 +1,35 @@
+.box-container{
+    background-color: blue;
+    width: 750px;
+    height: 500px;
+    position: relative;
+    opacity: .2;
+}
+.box{
+    font-size: 30px;
+    height: 300px;
+    width: 300px;
+}
+.box1{
+    background-color: crimson;
+    position: absolute;
+    top: 10px;
+    left: 110px;
+    /* z-index: 1; */
+    z-index: -1;
+}
+.box2{
+    background-color: yellow;
+    position: absolute;
+    top: 10px;
+    right: 110px;
+    z-index: 4;
+}
+.box3{
+    background-color: green;
+    position: absolute;
+    top: 30%;
+    right: 30%;
+    z-index: 3;
+    
+}
