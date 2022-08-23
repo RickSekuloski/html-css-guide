@@ -8,7 +8,7 @@ body{
     grid-template-rows: [header-start] 150px [header-end content-start] 700px [content-end footer-start] 150px [footer-end];
     /* grid-template-columns: [sidebar-start] 200px [sidebar-end main-start] 700px [main-end news-start] 200px [news-end]; */
      grid-template-columns: [sidebar-start] 200px [sidebar-end main-start] 1fr [main-end news-start] 200px [news-end];
-     grid-template-columns: 200px minmax(300px, 700px) 200px;
+     /*grid-template-columns: 200px minmax(300px, 700px) 200px;*/
 }
 
 .header{
