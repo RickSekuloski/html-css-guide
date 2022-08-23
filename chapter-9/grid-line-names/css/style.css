@@ -36,3 +36,50 @@ body{
     grid-column: sidebar-start / news-end;
     grid-row: footer-start / footer-end;
 }
+
+/* 
+if you want to test it using the minmax function then comment the code
+above and uncomment the code below. In order for the minmax to work there are 
+few changes that I have done
+Important, for this example fixed sized using pixels is ok but in reality
+you will use fractinal units for the content because you want to make
+the content height and width as flexible as possbile
+*/
+
+/*
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-rows: [header-start] 150px [header-end content-start] 700px [content-end footer-start] 150px [footer-end];
+  grid-template-columns: 200px minmax(700px, 1fr) 200px;
+}
+
+.header {
+  background-color: tomato;
+  grid-column: 1 / -1;
+  grid-row: header-start / header-end;
+}
+.sidebar {
+  background-color: mediumorchid;
+
+  grid-row: content-start / content-end;
+}
+.content {
+  background-color: lightcyan;
+  grid-row: content-start / content-end;
+}
+.news {
+  background-color: mediumturquoise;
+
+  grid-row: content-start / content-end;
+}
+.footer {
+  background-color: steelblue;
+  grid-column: 1 / -1;
+  grid-row: footer-start / footer-end;
+}
+*/
